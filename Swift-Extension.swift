@@ -22,7 +22,7 @@ public postfix func --(rhs: Int) {
 
 precedencegroup PowerOperatorPrecedence {
 higherThan: MultiplicationPrecedence
-lowerThan: BitshiftPrecedence
+lowerThan: plusPlusAndMinusMinus
 associativity: none
 assignment: false
 }
