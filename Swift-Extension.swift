@@ -15,7 +15,14 @@ public postfix func --(rhs: Int) {
     return rhs - 1
 }
 
-infix operator **
+precedencegroup PowerOperatorPrecedence {
+higherThan: MultiplicationPrecedence
+lowerThan: BitshiftPrecedence
+associativity: none
+assignment: false
+}
+
+infix operator **: PowerOperatorPrecedence
 public infix func **(lhs: Int, rhs: Int) {
     if rhs == 0 {
         return 1    
