@@ -6,11 +6,16 @@
 //
 
 import Foundation
-postfix operator ++
+precedencegroup plusPlusAndMinusMinus {
+    higherThan: BitwiseShiftPrecedence
+    assignment: false
+    associativity: none
+}
+postfix operator ++: plusPlusAndMinusMinus
 public postfix func ++(rhs: Int) {
     return rhs + 1
 }
-postfix operator --
+postfix operator --: plusPlusAndMinusMinus
 public postfix func --(rhs: Int) {
     return rhs - 1
 }
