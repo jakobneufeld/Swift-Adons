@@ -11,11 +11,11 @@ precedencegroup plusPlusAndMinusMinus {
     assignment: false
     associativity: none
 }
-postfix operator ++: plusPusAndMinusMinus
+postfix operator ++: plusPlusAndMinusMinus
 public postfix func ++(rhs: Int) {
     return rhs + 1
 }
-postfix operator --: plusPusAndMinusMinus
+postfix operator --: plusPlusAndMinusMinus
 public postfix func --(rhs: Int) {
     return rhs - 1
 }
