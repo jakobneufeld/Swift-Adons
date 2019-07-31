@@ -7,10 +7,10 @@
 
 import Foundation
 postfix operator ++
-postfix func ++(rhs: Numeral) {
+postfix func ++(rhs: Int) {
     return rhs + 1
 }
 postfix operator --
-postfix func --(rhs: Numeral) {
+postfix func --(rhs: Int) {
     return rhs - 1
 }
