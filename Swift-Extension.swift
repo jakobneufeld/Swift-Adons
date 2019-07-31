@@ -6,7 +6,7 @@
 //
 
 import Foundation
-precedencegroup plusPusAndMinusMinus {
+precedencegroup plusPlusAndMinusMinus {
     higherThan: BitwiseShiftPrecedence
     assignment: false
     associativity: none
