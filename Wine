@@ -2,6 +2,6 @@
 "installationCommands":["touch IDIOT"],
 "testCommands":[],
 "dependecyFiles":[],
-"source":"https://github.com/jakobneufeld/Swift-Adons.git,
+"source":"https://github.com/jakobneufeld/Swift-Adons.git",
 "name":"Swift-Adons"
 }
