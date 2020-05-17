@@ -1,0 +1,10 @@
+
+installationCommands:
+- echo llloooloo
+testCommands:
+- test -f I
+dependencyFiles:
+source: https://github.com/jakobneufeld/Swift-Adons.git
+name: Swift-Addons
+conflicts:
+
